@@ -6,7 +6,7 @@ variable "aws_access_key" {
 }
 
 variable "aws_secret_key" {
-    default = "xxx" # please change to your aws security key 
+    default = "xxx" # please change to your aws secret key 
 }
 
 # AWS Region
