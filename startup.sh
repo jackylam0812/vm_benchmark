@@ -24,6 +24,7 @@ if [[ "$${string}" == *"Google"* ]] ; then
     cpu_speed=$(echo $${cpu_speed_tmp##*:})
     mem_size_tmp=$(lshw -short -C memory | head -n 4 | tail -n 1 | awk '{print $3}')
     mem_size=$(echo $${mem_size_tmp##*:})
+    
 elif [[ "$${string}" == *"Amazon"* ]] ; then
 
     # # # For ARM
