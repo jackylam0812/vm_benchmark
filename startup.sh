@@ -141,4 +141,4 @@ echo End: user-data
 
 echo Shutting down host
 
-# shutdown -h now
+shutdown -h now
