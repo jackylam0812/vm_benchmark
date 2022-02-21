@@ -42,24 +42,24 @@ variable "linux_vm_hostname" {
   default     = "tfbenchmark"
 }
 
-# Ubuntu Linux Publisher used to build VMs
-variable "ubuntu-linux-publisher" {
+# Linux Publisher used to build VMs
+variable "linux-publisher" {
   type        = string
-  description = "Ubuntu Linux Publisher used to build VMs"
+  description = "Linux Publisher used to build VMs"
   default     = "Canonical"
 }
 
-# Ubuntu Linux Offer used to build VMs
-variable "ubuntu-linux-offer" {
+# Linux Offer used to build VMs
+variable "linux-offer" {
   type        = string
-  description = "Ubuntu Linux Offer used to build VMs"
+  description = "Linux Offer used to build VMs"
   default     = "UbuntuServer"
 }
 
-# Ubuntu Linux 18.x SKU used to build VMs
-variable "ubuntu-linux-18-sku" {
+# Linux SKU used to build VMs
+variable "linux-sku" {
   type        = string
-  description = "Ubuntu Linux Server SKU used to build VMs"
+  description = "Linux Server SKU used to build VMs"
   default     = "18.04-LTS"
 }
 
