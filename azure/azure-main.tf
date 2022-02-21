@@ -122,11 +122,11 @@ resource "azurerm_linux_virtual_machine" "azure-terraform-01" {
     storage_account_type = "Premium_LRS"
     disk_size_gb         = 50
   }
-
+  
   source_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "18.04-LTS"
+    publisher = var.linux-publisher
+    offer     = var.linux-offer
+    sku       = var.linux-sku
     version   = "latest"
   }
 
@@ -185,9 +185,9 @@ resource "azurerm_linux_virtual_machine" "azure-terraform-01" {
 #   }
 
 #   source_image_reference {
-#     publisher = "Canonical"
-#     offer     = "UbuntuServer"
-#     sku       = "18.04-LTS"
+#     publisher = var.linux-publisher
+#     offer     = var.linux-offer
+#     sku       = var.linux-sku
 #     version   = "latest"
 #   }
 
