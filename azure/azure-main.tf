@@ -103,7 +103,7 @@ resource "azurerm_linux_virtual_machine" "azure-terraform-01" {
   name                  = "terraform-01"
   location              = azurerm_resource_group.azure-rg.location
   resource_group_name   = azurerm_resource_group.azure-rg.name
-  size                  = "Standard_D4s_v5"
+  size                  = var.vm01
   computer_name         = var.linux_vm_hostname
   admin_username        = var.linux_admin_user
   admin_password        = var.linux_admin_password
@@ -168,7 +168,7 @@ resource "azurerm_linux_virtual_machine" "azure-terraform-01" {
 #   name                  = "terraform-02"
 #   location              = azurerm_resource_group.azure-rg.location
 #   resource_group_name   = azurerm_resource_group.azure-rg.name
-#   size                  = "Standard_D4s_v5"
+#   size                  = var.vm02
 #   computer_name         = var.linux_vm_hostname
 #   admin_username        = var.linux_admin_user
 #   admin_password        = var.linux_admin_password
