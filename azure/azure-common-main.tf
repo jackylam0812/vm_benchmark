@@ -4,7 +4,7 @@ locals {
   tenantid = var.azure_tenant_id
   storage_account = "xxx"  # Azure Storage Account you want to save the result
   container = "xxx" # Blob Container you want to save the result
-  benchmark = "coremark-1.0.1 sysbench-1.1.0" # testing suite installation, please choose the suite which you want to test. please viste https://openbenchmarking.org/ for details.
+  benchmark = "coremark-1.0.1 sysbench-1.1.0" # testing suite installation, please choose the suite which you want to test. please visit https://openbenchmarking.org/ for details.
   startup_script = templatefile( "D:\\Terrform\\startup.sh", { 
       appid = local.appid
       password = local.password
