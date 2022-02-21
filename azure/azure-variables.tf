@@ -62,3 +62,17 @@ variable "ubuntu-linux-18-sku" {
   description = "Ubuntu Linux Server SKU used to build VMs"
   default     = "18.04-LTS"
 }
+
+# VM01 Type
+variable "vm01"{
+  type        = string
+  description = "VM Type for VM01"
+  default     = "Standard_D4s_v5"
+}
+
+# VM02 Type
+variable "vm02"{
+  type        = string
+  description = "VM Type for VM02"
+  default     = "Standard_D4s_v4"
+}
